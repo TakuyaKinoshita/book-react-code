@@ -1,6 +1,7 @@
 import { ColoredMessage } from "./components/ColorMessage";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Cssmodules } from "./components/CssModules";
 
 export const App = () => {
   const [num, setNum] = useState(0);
@@ -27,11 +28,13 @@ export const App = () => {
 
   return (
     <>
-      <h1 style={styles.title}>Welcome to My wiki what`s worked on React!</h1>
-      <ColoredMessage color="blue">How are you?</ColoredMessage>
+      {/* <h1 style={styles.title}>Welcome to My wiki what`s worked on React!</h1> */}
+      {/* <ColoredMessage color="blue">How are you?</ColoredMessage>
       <ColoredMessage color="pink">Fine! thank you.</ColoredMessage>
       <button onClick={onClickButton}>counter</button>
-      <p>{num}</p>
+      <p>{num}</p> */}
+
+      <Cssmodules />
     </>
   );
 }
