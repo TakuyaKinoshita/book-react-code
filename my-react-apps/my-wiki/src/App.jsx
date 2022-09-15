@@ -2,6 +2,8 @@ import { ColoredMessage } from "./components/ColorMessage";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Cssmodules } from "./components/CssModules";
+import { Styledjsx } from "./components/StyledJsx";
+import { StyledComponents } from "./components/StyledComponents";
 
 export const App = () => {
   const [num, setNum] = useState(0);
@@ -34,7 +36,9 @@ export const App = () => {
       <button onClick={onClickButton}>counter</button>
       <p>{num}</p> */}
 
-      <Cssmodules />
+      {/* <Cssmodules /> */}
+      {/* <Styledjsx /> */}
+      <StyledComponents />
     </>
   );
 }
