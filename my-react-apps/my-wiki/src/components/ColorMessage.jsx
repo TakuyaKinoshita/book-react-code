@@ -1,5 +1,5 @@
-export const ColoredMessage = (props) => {
-  const { color, children } = props;
+export const ColoredMessage = ({ color, children }) => {
+  // const { color, children } = props;
 
   const copntentStyle = {
     color,

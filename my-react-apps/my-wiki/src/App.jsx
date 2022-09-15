@@ -1,6 +1,10 @@
 import { ColoredMessage } from "./components/ColorMessage";
+import { useState } from "react";
 
 export const App = () => {
+  console.log("rendered");
+  const [num, setNum] = useState(0);
+
   const styles = {
     title: {
       fontSize: "2rem",
@@ -14,6 +18,7 @@ export const App = () => {
   };
 
   const onClickButton = () => {
+    setNum((prev) => prev + 1);
   };
 
   return (
@@ -21,7 +26,8 @@ export const App = () => {
       <h1 style={styles.title}>Welcome to My wiki what`s worked on React!</h1>
       <ColoredMessage color="blue">How are you?</ColoredMessage>
       <ColoredMessage color="pink">Fine! thank you.</ColoredMessage>
-      <button onClick={onClickButton}>Fine!</button>
+      <button onClick={onClickButton}>counter</button>
+      <p>{num}</p>
     </>
   );
 }
