@@ -1,4 +1,4 @@
-const App = () => {
+export const App = () => {
   return (
     <>
       <h1>Welcome to My wiki what`s worked on React!</h1>
