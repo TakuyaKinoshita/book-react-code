@@ -1,8 +1,8 @@
 import { ColoredMessage } from "./components/ColorMessage";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export const App = () => {
-  console.log("rendered");
   const [num, setNum] = useState(0);
 
   const styles = {
@@ -16,6 +16,10 @@ export const App = () => {
       padding: "5rem 0 0 5rem"
     }
   };
+
+  useEffect(() => {
+    alert("update Num!");
+  }, [num]);
 
   const onClickButton = () => {
     setNum((prev) => prev + 1);
